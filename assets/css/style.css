@@ -2353,11 +2353,23 @@ transition: 0.4s all ease-in-out;
   transition: 0.4s all ease-in-out;
 }
 
-
-
 /* ------------ */
 
+.btn-specific{
+  padding: 5px 10px;
+  background-color: var(--color-two);
+  color: var(--color-one);
+  border: 2px solid var(--color-one);
+  transition: .3s all ease-in-out;
+  cursor: pointer;
+}
 
+.btn-specific:hover{
+  background-color: var(--color-one);
+  color: var(--color-two);
+  border-color: var(--color-two);
+  transform: scale(1.1);
+}
 
 /* details code design-- */
 @media (min-height: 1200px) {
