@@ -330,3 +330,5 @@ searchbtn.onclick = function() {
     searchitem.placeholder = "ابحث عن المنتج أولاً";
   }
 }
+
+
