@@ -33,7 +33,7 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="assets/css/add-product-admin.css">
+  <link rel="stylesheet" href="assets/css/edit-product-admin.css">
   <link rel="stylesheet" href="assets/css/FIX-TEMPLETE.css">
 
 </head>
@@ -79,9 +79,9 @@
           <ol>
             <li><a href="index.html" class="font1">الرئيسية</a></li>
             <li class="font1">الادمن</li>
-            <li class="font1">اضافة المنتجات</li>
+            <li class="font1">تعديل المنتجات</li>
           </ol>
-          <h2 class="font1">صفحة اضافة المنتجات</h2>
+          <h2 class="font1">صفحة تعديل المنتجات</h2>
           
         </div>
 
@@ -93,61 +93,62 @@
   <div class="all">
 
     <div class="img-pt">
+        <!-- <img src="assets/img/img-svg/2.svg" alt=""> -->
         <img src="assets/img/cakeimg/logo-cake.png" alt="">
-        <!-- <img src="assets/img/img-svg/1.svg" alt=""> -->
     </div>
     
     <div class="items">
         
         <form action="" method="get">
 
-            <div class="name-pt">
-                <label for="" class="font1 label-item">الاسم</label>
-                <input type="text" name="name" id="" class="font1" required>
-            </div>
+          <div class="name-pt">
+            <label for="" class="font1 label-item">الاسم</label>
+            <input type="text" name="name" id="" class="font1" required>
+        </div>
 
-            
-          <div class="type-pt">
-            <label for="" class="font1 label-item">نوع الصنف</label>
-            <select name="type" id="" class="font1" required>
-                <option value="#">الصنف 1</option>
-                <option value="#">الصنف 2</option>
-                <option value="#">الصنف 3</option>
-            </select>
-          </div>
+        
+      <div class="type-pt">
+        <label for="" class="font1 label-item">نوع الصنف</label>
+        <select name="type" id="" class="font1" required>
+            <option value="#">الصنف 1</option>
+            <option value="#">الصنف 2</option>
+            <option value="#">الصنف 3</option>
+        </select>
+      </div>
 
-          <div class="img-one-pt">
-            <label class="font1 label-item">صورة المنتج</label>
-            <label for="imgone" class="font1 labelimgone">ارفق صورة</label>
-            <input type="file" name="imgone" id="imgone" class="font1" required>
-          </div>         
+      <div class="img-one-pt">
+        <label class="font1 label-item">صورة المنتج</label>
+        <label for="imgone" class="font1 labelimgone">ارفق صورة</label>
+        <input type="file" name="imgone" id="imgone" class="font1" required>
+      </div>         
 
-            <div class="price-pt">
-              <label for="price" class="font1 label-item">السعر</label>
-                <input type="number" name="price" id="" class="font1" required>
-            </div>
+        <div class="price-pt">
+          <label for="price" class="font1 label-item">السعر</label>
+            <input type="number" name="price" id="" class="font1" required>
+        </div>
 
-            <div class="photo2-pt">
-              <label for="" class="font1 label-item">صورة المنتج 2 (اختياري)</label>
-              <label for="imgtwo" class="font1 labelimgtwo">ارفق صورة</label>
-              <input type="file" name="imgtwo" id="imgtwo" class="font1">
-          </div>
+        <div class="photo2-pt">
+          <label for="" class="font1 label-item">صورة المنتج 2 (اختياري)</label>
+          <label for="imgtwo" class="font1 labelimgtwo">ارفق صورة</label>
+          <input type="file" name="imgtwo" id="imgtwo" class="font1">
+      </div>
 
-          <div class="photo3-pt">
-            <label for="" class="font1 label-item">صورة المنتج3 (اختياري)</label>
-            <label for="imgthree" class="font1 labelimgthree">ارفق صورة</label>
-            <input type="file" name="imgthree" id="imgthree" class="font1">
-          </div>
+      <div class="photo3-pt">
+        <label for="" class="font1 label-item">صورة المنتج3 (اختياري)</label>
+        <label for="imgthree" class="font1 labelimgthree">ارفق صورة</label>
+        <input type="file" name="imgthree" id="imgthree" class="font1">
+      </div>
 
-            <div class="desc-pt">
-                <label for="" class="font1 label-item">وصف المنتج</label>
-                <textarea name="desc" class="font1" id="" required></textarea>
-            </div>
+        <div class="desc-pt">
+            <label for="" class="font1 label-item">وصف المنتج</label>
+            <textarea name="desc" class="font1" id="" required></textarea>
+        </div>
 
             
 
             <div class="send-pt">
-                <input type="submit" value="ادخال" class="font1">
+                <input type="submit" value="تعديل" class="font1 upadte-btn">
+                <input type="submit" value="حذف" class="font1 drop-btn">
             </div>
 
         </form>
@@ -173,10 +174,8 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  <!-- <script src="add/js/all.min.js"></script> -->
-
-  <script src="assets/js/main.js"></script>
   <script src="assets/js/codejs.js"></script>
+  <!-- <script src="add/js/all.min.js"></script> -->
 
 </body>
 

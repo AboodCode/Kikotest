@@ -304,12 +304,12 @@ form{
     height: var(--heightOfInputs);
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     position: relative;
 }
 
 .items .send-pt input{
-    width: 50%;
+    width: 40%;
     height: 100%;
     border-radius: var(--borderOfInputs);
     border: 0;
@@ -327,6 +327,11 @@ form{
     color: #fff;
     background-color: var(--MC);    
 } 
+
+.items .send-pt  .update.btn{}
+.items .send-pt  .drop.btn{background-color: #856a6a;}
+
+
 
 /******************************************************************/
 /******************************************************************/
@@ -362,7 +367,7 @@ form{
         width: 50%;
     }
 
-    .items .photo2-pt{
+    .items .photo-pt{
         width: 50%;
     }
 
