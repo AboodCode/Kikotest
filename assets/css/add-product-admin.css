@@ -131,7 +131,7 @@ form{
     border-radius: var(--borderOfInputs);
     border: 0;
     color: var(--MC);
-    font-size: 20px !important;
+    font-size: 20px;
     background-color: rgb(148, 177, 146);
     display: flex;
     align-items: center;
@@ -145,7 +145,7 @@ form{
     border-radius: var(--borderOfInputs);
     border: 0;
     color: var(--MC);
-    font-size: 20px !important;
+    font-size: 20px;
     background-color: rgb(148, 177, 146);
     display: flex;
     align-items: center;
@@ -162,7 +162,7 @@ form{
     border-radius: var(--borderOfInputs);
     border: 0;
     color: var(--MC);
-    font-size: 20px !important;
+    font-size: 20px;
     background-color: rgb(148, 177, 146);
     display: flex;
     align-items: center;
@@ -359,11 +359,20 @@ form{
     }
 
     .items .price-pt{
-        width: 50%;
+        width: 100%;
     }
 
     .items .photo2-pt{
-        width: 50%;
+        width: 48%;
+    }
+
+    .items .photo3-pt{
+        width: 48%;
+    }
+
+    .items .photo2-pt label,
+    .items .photo3-pt label{
+        font-size: 10px;
     }
 
 

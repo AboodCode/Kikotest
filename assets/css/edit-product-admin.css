@@ -364,11 +364,19 @@ form{
     }
 
     .items .price-pt{
-        width: 50%;
+        width: 100%;
     }
 
     .items .photo-pt{
         width: 50%;
+    }
+    
+    .items .photo2-pt{
+        width: 48%;
+    }
+    
+    .items .photo3-pt{
+        width: 48%;
     }
 
 
