@@ -2483,6 +2483,46 @@ transition: 0.4s all ease-in-out;
 }
 
 /* end product admin design code------- */
+
+.btn-countener{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.btn-countener button{
+  color: #000000;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+  transition: .2s all ease-in-out;
+}
+
+.btn-countener button:nth-child(1){
+  background-color: #68eca6;
+  width: 100%;
+  margin-top: 10px;
+}
+.btn-countener button:nth-child(2){
+  background-color: #f58e8c;
+  width: 48%;
+  margin-top: 10px;
+}
+.btn-countener button:nth-child(3){
+  background-color: #eae6ee;
+  width: 48%;
+  margin-top: 10px;
+}
+
+.btn-countener button:nth-child(1):hover{background-color: #14ec79;}
+.btn-countener button:nth-child(2):hover{background-color: #f04c49;}
+.btn-countener button:nth-child(3):hover{background-color: #dfd1ec;}
+
+
+
 /* details code design-- */
 @media (min-height: 1200px) {
   .fix-size{
