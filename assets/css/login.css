@@ -16,8 +16,12 @@
 	  overflow: hidden;
 }
 
-body {
+body,html {
     background: linear-gradient(166deg, #ffffff, #654520);
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .container {
@@ -187,12 +191,3 @@ body {
 	transform: scale(1.5);	
 }
 
-@media (max-width:450px){
-	body{
-		height: 140vh;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-
-}
