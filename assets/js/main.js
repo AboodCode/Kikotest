@@ -340,39 +340,88 @@
 //--------------اعدادت السلة
 // ------ تجريب على الكونسول
 
+// document.querySelectorAll('.link-buy').forEach(button => {
+//   button.addEventListener('click', function(event) {
+//       event.preventDefault(); // يمنع الانتقال إلى رابط فارغ
+      
+//       // الحصول على المعلومات من الزر
+//       // const price = this.getAttribute('data-price');
+//       const description = this.getAttribute('data-description');
+//       // const name = this.getAttribute('data-name');
+      
+//       // الحصول على الصورة
+//       const imgElement = this.closest('.portfolio-wrap').querySelector('img'); 
+//       const imageSrc = imgElement.getAttribute('src'); // مصدر الصورة
+
+//        // الحصول على السعر
+//        const priceElement = this.closest('.portfolio-wrap').querySelector('.price-product'); 
+//        const price = priceElement.getAttribute('data-price'); // مصدر السعر
+
+//        // الحصول على الاسم
+//        const nameElement = this.closest('.portfolio-wrap').querySelector('.name-product'); 
+//        const nameproduct= nameElement.getAttribute('data-nameproduct'); // مصدر الاسم
+
+//         // الحصول على الوصف
+//         const descElement = this.closest('.portfolio-wrap').querySelector('.desc-product'); 
+//         const descproduct= descElement.getAttribute('data-description'); // مصدر الصورة
+
+//       // عرض المعلومات في الكونسول
+//       console.log(`الاسم|النوع: ${nameproduct}`); //done
+//       console.log(`السعر: ${price} ر.ي`); // done
+//       console.log(`الوصف: ${descproduct}`);
+//       console.log(`الصورة: ${imageSrc}`); // done
+//   });
+// });
+// ------------
+
+
 document.querySelectorAll('.link-buy').forEach(button => {
   button.addEventListener('click', function(event) {
       event.preventDefault(); // يمنع الانتقال إلى رابط فارغ
       
       // الحصول على المعلومات من الزر
-      // const price = this.getAttribute('data-price');
       const description = this.getAttribute('data-description');
-      // const name = this.getAttribute('data-name');
       
       // الحصول على الصورة
       const imgElement = this.closest('.portfolio-wrap').querySelector('img'); 
       const imageSrc = imgElement.getAttribute('src'); // مصدر الصورة
 
-       // الحصول على السعر
-       const priceElement = this.closest('.portfolio-wrap').querySelector('.price-product'); 
-       const price = priceElement.getAttribute('data-price'); // مصدر السعر
+      // الحصول على السعر
+      const priceElement = this.closest('.portfolio-wrap').querySelector('.price-product'); 
+      const price = priceElement.getAttribute('data-price'); // مصدر السعر
 
-       // الحصول على الاسم
-       const nameElement = this.closest('.portfolio-wrap').querySelector('.name-product'); 
-       const nameproduct= nameElement.getAttribute('data-nameproduct'); // مصدر الاسم
+      // الحصول على الاسم
+      const nameElement = this.closest('.portfolio-wrap').querySelector('.name-product'); 
+      const nameproduct = nameElement.getAttribute('data-nameproduct'); // مصدر الاسم
 
-        // الحصول على الوصف
-        const descElement = this.closest('.portfolio-wrap').querySelector('.desc-product'); 
-        const descproduct= descElement.getAttribute('data-description'); // مصدر الصورة
+      // الحصول على الوصف
+      const descElement = this.closest('.portfolio-wrap').querySelector('.desc-product'); 
+      const descproduct = descElement.getAttribute('data-description'); // مصدر الصورة
 
-      // عرض المعلومات في الكونسول
-      console.log(`الاسم|النوع: ${nameproduct}`); //done
-      console.log(`السعر: ${price} ر.ي`); // done
-      console.log(`الوصف: ${descproduct}`);
-      console.log(`الصورة: ${imageSrc}`); // done
+      // تخزين المعلومات في localStorage
+      const productData = {
+          name: nameproduct,
+          price: price,
+          description: descproduct,
+          image: imageSrc
+      };
+
+      // يمكنك استخدام مفتاح فريد لتخزين البيانات
+      const productKey = `product-${Date.now()}`; // أو استخدم اسم فريد آخر
+      localStorage.setItem(productKey, JSON.stringify(productData));
+
+      // رسالة تأكيد (اختياري)
+      alert(`تم إضافة ${nameproduct} إلى السلة!`);
+location.reload();
+
   });
 });
-// ------------
+
+//-----counter-cert
+
+let countercert = document.querySelector(".counter-cert");
+
+countercert.innerHTML = localStorage.length;
 
 
 

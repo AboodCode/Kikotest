@@ -110,59 +110,11 @@
                     <th class="product-remove">حذف</th>
                   </tr>
                 </thead>
-                <tbody>
-                  <tr>
-                    <td class="product-thumbnail df-wh">
-                      <img src="assets/img/cakeimg/0002.jpg" alt="Image" class="img-fluid">
-                    </td>
-                    <td class="product-name">
-                      <h2 class="h5 text-black">المنتج 1</h2>
-                    </td>
-                    <td>1000 <span>ر.ي</span></td>
-                    <td>
-                      <div class="input-group mb-3 d-flex align-items-center quantity-container" style="max-width: 120px;">
-                        
-                        <div class="input-group-append">
-                          <button class="btn btn-outline-black increase" type="button">&plus;</button>
-                        </div>
+                
+                <tbody id="body-table">
 
-                        <input type="text" class="form-control text-center quantity-amount" value="1" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">  
-
-                        <div class="input-group-prepend">
-                          <button class="btn btn-outline-black decrease" type="button">&minus;</button>
-                        </div>
-                      </div>
-  
-                    </td>
-                    <td>$49.00</td>
-                    <td><a href="#" class="btn btn-black btn-sm"><i class="fa-solid fa-trash"></i></a></td>
-                  </tr>
-  
-                  <tr>
-                    <td class="product-thumbnail df-wh">
-                      <img src="assets/img/cakeimg/003.jpg" alt="Image" class="img-fluid">
-                    </td>
-                    <td class="product-name">
-                      <h2 class="h5 text-black">المنتج 2</h2>
-                    </td>
-                    <td>2000 <span>ر.ي</span></td>
-                    <td>
-                      <div class="input-group mb-3 d-flex align-items-center quantity-container" style="max-width: 120px;">
-                        <div class="input-group-append">
-                          <button class="btn btn-outline-black increase" type="button">&plus;</button>
-                        </div>
-                        
-                        <input type="text" class="form-control text-center quantity-amount" value="1" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
-                        <div class="input-group-prepend">
-                          <button class="btn btn-outline-black decrease" type="button">&minus;</button>
-                        </div>
-                      </div>
-  
-                    </td>
-                    <td>$49.00</td>
-                    <td><a href="#" class="btn btn-black btn-sm"><i class="fa-solid fa-trash"></i></a></td>
-                  </tr>
                 </tbody>
+
               </table>
             </div>
           </form>
@@ -172,7 +124,7 @@
           <div class="col-md-6">
             <div class="row mb-5">
               <div class="col-md-6 mb-3 mb-md-0">
-                <button class="btn btn-black btn-sm btn-block btn-specific">افراغ السلة</button>
+                <button class="btn btn-black btn-sm btn-block btn-specific clear-cert">افراغ السلة</button>
               </div>
               <div class="col-md-6">
                 <button class="btn btn-outline-black btn-sm btn-block btn-specific" onclick="window.location='products.html'">الاستمرار في الشراء</button>
@@ -266,6 +218,7 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/GetFromLocalStorge.js"></script>
 	</body>
 
 </html>
