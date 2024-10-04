@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
-
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -24,7 +22,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	min-height: 100vh;
+	height: 100vh;
 }
 
 .screen {		
@@ -185,4 +183,14 @@ body {
 
 .social-login__icon:hover {
 	transform: scale(1.5);	
+}
+
+@media (max-width:450px){
+	body{
+		height: 140vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
 }
