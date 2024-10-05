@@ -43,8 +43,7 @@ for (let i = 0; i < localStorage.length; i++) {
     document.getElementById('body-table').appendChild(productContainer);
 }
 
-
-
+// ------------ افراغ السلة
 let clearBtn = document.querySelector(".clear-cert");
 
 // تحقق من وجود الزر قبل إضافة الحدث
@@ -57,8 +56,36 @@ if (clearBtn) {
         
         // تحديث المحتوى المعروض (اختياري)
         document.getElementById('body-table').innerHTML = ''; // إفراغ محتوى الكاردات المعروضة
-    }
+      location.reload();
+      }
 } else {
     console.log("الزر غير موجود في الصفحة.");
 }
+
+// ------ النهاية
+// ,,,,,,,,,,,,,,,
+
+
+// ---------------السلة فارغة!!
+// تحديد عنصر table
+let table = document.querySelector('table');
+
+// التأكد من وجود الجدول
+if (localStorage.length == 0) {
+    // إضافة العنصر بعد الجدول
+    table.insertAdjacentHTML('afterend', `
+        <div class="patern-empty">
+            <div class="all">
+                <div class="img-ptrn"><img src="assets/img/img-svg/Add-to-Cart-amico.svg" alt=""></div>
+                <p>اوبس!! السلة فارغة</p>
+                <div class="btnback"><a href="products.html">تسوق الان</a></div>
+            </div>
+        </div>
+    `);
+}
+
+// ----------------
+
+
+
 

@@ -328,10 +328,6 @@ form{
     background-color: var(--MC);    
 } 
 
-.items .send-pt  .update.btn{}
-.items .send-pt  .drop.btn{background-color: #856a6a;}
-
-
 
 /******************************************************************/
 /******************************************************************/
@@ -379,10 +375,18 @@ form{
         width: 48%;
     }
 
+    .items .send-pt .update-btn{
+        width: 30%;
+        height: 90%;
+        font-size: 18px;
+    }
+    .items .send-pt .drop-btn{
+        width: 30%;
+        height: 90%;
+        font-size: 18px;
+    }
 
-    
     /*-------------------*/
-
 
 }
 

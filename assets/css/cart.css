@@ -168,8 +168,82 @@ body{
     .small-f{
         font-size: 10px !important;
     }
-
-    
 } 
+
+
+/* لما تكون السلة فاضية */
+
+.patern-empty{
+    height: 60vh;
+    width: 100%;
+}
+
+.all{
+    height: 100%;
+    width: 100%;
+    background-color: #54121206;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.all .img-ptrn{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.all .img-ptrn img {
+    width: 20%;
+}
+
+.all p{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.all .btnback{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.all .btnback a{
+    width: fit-content;
+    height: fit-content;
+    padding: 5px 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--fourthtColor);
+    color: var(--secoundColor);
+    border: 2px solid var(--secoundColor);
+    transition: all .3s ease-in-out;
+    font-size: 16px;
+}
+
+.all .btnback a:hover{
+    transform: scale(1.1);
+    background-color: #541212;
+    border-color: var(--fourthtColor);
+    color: var(--fourthtColor);
+}
+
+@media (max-width:450px){
+    .all .img-ptrn img {
+        width: 75%;
+    }
+}
+
 /* 
 */

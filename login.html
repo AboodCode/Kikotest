@@ -42,16 +42,15 @@
                 <form class="login" action="loginproces.php">
                     <div class="login__field">
                         <i class="login__icon fas fa-user"></i>
-                        <input type="text" class="login__input font1" placeholder="اسم المستخدم" name="username">
+                        <input type="text" class="login__input user font1" placeholder="اسم المستخدم" name="username">
                     </div>
                     <div class="login__field">
                         <i class="login__icon fas fa-lock"></i>
-                        <input type="password" class="login__input font1" placeholder="كلمة المرور"  name="password">
+                        <input type="password" class="login__input pass font1" placeholder="كلمة المرور"  name="password">
                     </div>
                     
                     
                     <input type="submit" class="login__submit font1" value="دخول" name="login">
-
 
                 </form>
                 <div class="social-login">
@@ -63,9 +62,25 @@
                 <span class="screen__background__shape screen__background__shape3"></span>		
                 <span class="screen__background__shape screen__background__shape2"></span>
                 <span class="screen__background__shape screen__background__shape1"></span>
-            </div>		
+            </div>
+            
+            <button class="re font1">مسح</button>
+            
         </div>
     </div>
+
+
+    <script>
+        let buttonRe = document.querySelector("button.re");
+        let user = document.querySelector(".user");
+        let pass = document.querySelector(".pass");
+
+        buttonRe.onclick = function(){
+            user.value = "";
+            pass.value = "";
+        }
+
+    </script>
 
 </body>
 </html>
